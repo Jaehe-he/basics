@@ -1,0 +1,46 @@
+■ 두 정수 A와 B를 입력 받은 다음, A+B를 출력하는 프로그램 작성해보기
+
+a,b = map(int,input().split())
+sum = 0
+if 0<a<10:
+if 0<b<10:
+sum = a+b
+print(sum)
+
+■ 다양한 별찍기 문제 풀어보기
+1. 첫째 줄에 별 1개, 둘째 줄에 별 2개, N번째 줄에 N개 출력하는 프로그램 작성해보기
+n = int(input())
+
+for i in range(0,n):
+  for j in range(1+i):
+    print('*', end='')
+  print('')
+
+1-1. 1. 문제를 오른쪽 기준으로 정렬하는 프로그램 작성해보기
+n = int(input())
+
+for i in range(0,n):
+  for j in range(n-1-i):
+    print(' ' , end='')
+  for j in range(1+i):
+    print('*', end='')
+  print('')
+
+
+2. 첫째 줄에 별 N개, 둘쨰 줄에 별 N-1개 ... N번째 줄에는 별 1개 출력하는 프로그램 작성해보기
+n = int(input())
+
+for i in range(0,n):
+  for j in range(n-i):
+    print('*', end='')
+  print('')
+
+2-1. 2. 문제를 오른쪽 기준으로 정렬하는 프로그램 작성해보기
+n=int(input())
+
+for i in range(0,n):
+  for j in range(i):
+    print(' ', end='')
+  for j in range(n-i):
+    print('*', end='')
+  print('')
