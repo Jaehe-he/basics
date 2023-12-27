@@ -1,0 +1,29 @@
+■ 별찍기 심화(이어서)
+1. 모래시계 모형으로 별찍는 프로그램 만들기
+n=int(input())
+
+for i in range(n):
+  for j in range(i):
+    print(' ', end='')
+  for j in range(2*n-1-2*i):
+    print('*', end='')
+  print()
+
+for m in range(n-1):
+  for j in range(n-2-m):
+    print(' ', end='')
+  for j in range(3+2*m):
+    print('*', end='')
+  print()
+
+
+■ 체스
+첫째 줄에 OO이가 찾은 흰색 킹, 퀸, 룩, 비숍, 나이트, 폰의 개수가 주어지고 이 값은 0보다 크거나 같고 10보다 작거나 같은 정수이다.
+첫째 줄에 입력에서 주어진 순서대로 몇개의 피스를 더하거나 빼야 되는지 출려갛고 만약 수가 양수라면 OO이는 그 개수 만큼 피스를 더해야 하는것이고, 음수라면 제거해야 한다.
+이 프로그램을 만들어보기
+
+arr = [1,1,2,2,2,8]
+arr2 = list(map(int,input().split()))
+
+for i in range(6):
+  print(arr[i]-arr2[i], end=' ')
